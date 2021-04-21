@@ -49,7 +49,7 @@ def run():
 
         sky.on = True
 
-        #Tela de Início
+        #Start Screen
         while True:
             checkEventsInitial(inic, sky)
             updateScreenInitial(sett, screen, sky, inic)
@@ -58,7 +58,7 @@ def run():
                 break
             elif inic.val == 1:
 
-                #Tela de Opções
+                #Options Screen
                 while True:
                     checkEventsOptions(opt, sky)
                     updateScreenOptions(sett, screen, sky, opt)
@@ -67,7 +67,7 @@ def run():
                         opt.state = 0
                         opt.val = -1
                         
-                        #Escolha de Nave
+                        #Ship Choose
                         while True:
                             checkEventsShips(ships, sky)
                             updateScreenShips(sett, screen, sky, ships)
@@ -80,7 +80,7 @@ def run():
                         opt.state = 0
                         opt.val = -1
                         
-                        #Escolha de Nível
+                        #Level Choose
                         while True:
                             checkEventsLevel(level, sky)
                             updateScreenLevel(sett, screen, sky, level)
@@ -93,7 +93,7 @@ def run():
                         opt.state = 0
                         opt.val = -1
                         
-                        #Visualização de Controles
+                        #Controls Visualizer
                         while True:
                             checkEventsControls(control, sky)
                             updateScreenControls(sett, screen, sky, control)
@@ -111,7 +111,7 @@ def run():
                         break
                 
         
-        #Criando os Objetos
+        #Creating Objects
         diff = [[10, 8, 6, 2, 2, 2, 1, 1, 1, 1, 1],
                 [12, 10, 8, 1, 2, 2, 1, 1, 2, 1, 1],
                 [14, 12, 10, 1, 1, 2, 1, 2, 2, 1, 3],
@@ -131,12 +131,12 @@ def run():
 
         count = Count(screen)
 
-        #Contagem
+        #Count
         for num in range(1, 4):
             for i in range(0, 350):
                 updateScreenCount(sett, screen, sky, count, num)
 
-        #Jogo
+        #Game
         for enemie in enemies:
 
             vel = 0
