@@ -8,7 +8,7 @@ from pathlib import Path
 def getPath(path):
     return join(Path.cwd(), path)
 
-######################################Início######################################
+######################################Start######################################
 
 def checkEventsInitial(inic, sky):
     for event in pygame.event.get():
@@ -43,7 +43,7 @@ def updateScreenInitial(sett, screen, sky, inic):
 
     pygame.display.flip()
 
-######################################Opções######################################
+#####################################Options#####################################
 
 def checkEventsOptions(opt, sky):
     for event in pygame.event.get():
@@ -86,7 +86,7 @@ def updateScreenOptions(sett, screen, sky, opt):
 
     pygame.display.flip()
 
-######################################Escola da Nave######################################
+###################################Ship Choose###################################
 
 def checkEventsShips(Ships, sky):
     for event in pygame.event.get():
@@ -115,7 +115,7 @@ def updateScreenShips(sett, screen, sky, Ships):
     Ships.blitSelec()
     pygame.display.flip()
 
-######################################Escolha de Níveis######################################
+##################################Level Choose##################################
 
 def checkEventsLevel(level, sky):
     for event in pygame.event.get():
@@ -151,7 +151,7 @@ def updateScreenLevel(sett, screen, sky, level):
 
     pygame.display.flip()
 
-######################################Controles######################################
+####################################Controls####################################
 
 def checkEventsControls(control, sky):
     for event in pygame.event.get():
@@ -171,7 +171,7 @@ def updateScreenControls(sett, screen, sky, control):
     control.blitControls()
     pygame.display.flip()
 
-######################################Contagem######################################
+#####################################Count#####################################
 
 def updateScreenCount(sett, screen, sky, count, num):
     screen.fill(sett.back)
@@ -179,7 +179,7 @@ def updateScreenCount(sett, screen, sky, count, num):
     count.blitNum(num)
     pygame.display.flip()
 
-######################################Jogo######################################
+######################################Game######################################
 
 def checkEventsLead(screen, ship, sky):
     for event in pygame.event.get():
