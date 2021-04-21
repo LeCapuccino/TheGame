@@ -3,7 +3,7 @@ import pygame
 from os.path import join
 from pathlib import Path
 
-###################################Processamento##################################
+####################################processing###################################
 
 def getPath(path):
     return join(Path.cwd(), path)
