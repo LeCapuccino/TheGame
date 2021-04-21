@@ -47,7 +47,7 @@ def run():
 
         sett.back[0], sett.back[1], sett.back[2] = 200, 200, 200
 
-        sky.on = False
+        sky.on = True
 
         #Tela de Início
         while True:
