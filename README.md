@@ -1,4 +1,4 @@
-# TheGame
+# The Game
 
 This game is a project that I make using python and pygame. 
 
